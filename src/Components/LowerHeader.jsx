@@ -163,35 +163,35 @@ function LowerHeader() {
                     to="/MyAccount"
                     className="flex items-center justify-center gap-2 px-4 py-2 hover:bg-gray-700"
                   >
-                    <img src="./assets/Whiteuser.png" alt="User Icon" />
+                    <img src="../assets/Whiteuser.png" alt="User Icon" />
                     <p className="whitespace-nowrap">{t("menu.my_account")}</p>
                   </Link>
                   <Link
                     to="/CheckOut"
                     className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700"
                   >
-                    <img src="./assets/iconOrder.png" alt="Bag Icon" />
+                    <img src="../assets/iconOrder.png" alt="Bag Icon" />
                     <p>{t("menu.my_order")}</p>
                   </Link>
                   <Link
                     to="/Cart"
                     className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700"
                   >
-                    <img src="./assets/WhiteCart.png" alt="Cancel Icon" />
+                    <img src="../assets/WhiteCart.png" alt="Cancel Icon" />
                     <p>{t("menu.my_cart")}</p>
                   </Link>
                   <Link
                     to="/Wishlist"
                     className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700"
                   >
-                    <img src="./assets/IconReviews.png" alt="Reviews Icon" />
+                    <img src="../assets/IconReviews.png" alt="Reviews Icon" />
                     <p>{t("menu.my_wishlist")}</p>
                   </Link>
                   <button
                     onClick={signOutHandler}
                     className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 w-full text-left"
                   >
-                    <img src="./assets/IconLogout.png" alt="LogOut Icon" />{" "}
+                    <img src="../assets/IconLogout.png" alt="LogOut Icon" />{" "}
                     {t("menu.logout")}
                   </button>
                 </div>
