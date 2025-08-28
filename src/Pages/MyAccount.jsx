@@ -180,36 +180,6 @@ function MyAccountPage() {
               </div>
             </div>
 
-            <div>
-              <label className="block mb-2">
-                {t("my_account.password_changes")}
-              </label>
-              <input
-                type="password"
-                name="currentPassword"
-                placeholder={t("my_account.current_password_placeholder")}
-                value={formData.currentPassword}
-                onChange={handleChange}
-                className="w-full bg-gray-100 rounded py-3 px-4 mb-4"
-              />
-              <input
-                type="password"
-                name="newPassword"
-                placeholder={t("my_account.new_password_placeholder")}
-                value={formData.newPassword}
-                onChange={handleChange}
-                className="w-full bg-gray-100 rounded py-3 px-4 mb-4"
-              />
-              <input
-                type="password"
-                name="confirmPassword"
-                placeholder={t("my_account.confirm_password_placeholder")}
-                value={formData.confirmPassword}
-                onChange={handleChange}
-                className="w-full bg-gray-100 rounded py-3 px-4"
-              />
-            </div>
-
             <div className="flex flex-col md:flex-row md:justify-end gap-8">
               <button
                 type="button"
