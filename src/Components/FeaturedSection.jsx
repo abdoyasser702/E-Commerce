@@ -140,16 +140,24 @@ function FeaturedSection() {
         </div>
       </div>
       <div className="flex justify-center min-[1135px]:justify-end">
-        <button
+        <motion.button
           onClick={() => {
             document.getElementById("Header")?.scrollIntoView({
               behavior: "smooth",
             });
           }}
           className="flex justify-center bg-[#F5F5F5] p-3 rounded-full w-[46px]"
+          initial={{ y: 0 }}
+          animate={{ y: [-5, 0] }}
+          transition={{
+            duration: 0.5,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          }}
         >
           <img src="./assets/UpArrow.png" alt={t("up_arrow_alt")} />
-        </button>
+        </motion.button>
       </div>
     </motion.section>
   );
